@@ -1,8 +1,7 @@
 @font-face {
     font-family: cooking;
-    src: url(Manrope-light.ttf);
+    src: url(Manrope-Light.ttf);
 }
-
 body{
     background-color: hsla(0, 0%, 0%, 0.884);
 }
