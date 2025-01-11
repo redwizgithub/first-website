@@ -1,0 +1,36 @@
+@font-face {
+    font-family: cooking;
+    src: url(Manrope-light.ttf);
+}
+
+body{
+    background-color: hsla(0, 0%, 0%, 0.884);
+}
+.maintext {
+    text-align: center;
+    transform: translateY(200px);
+}
+.header{
+    color: hsl(0, 0%, 93%);
+    font-family: cooking;
+    font-size: 40px;
+    padding: 3px;
+    margin: 2px;
+}   
+.headerDescription{
+    color: hsla(0, 2%, 60%, 0.918);
+    font-family: cooking;
+    font-size: 18px;
+    padding: 3px;
+    margin: 2px;
+}
+.icons {
+    text-align: center;
+    transform: translateY(220px);
+    padding: 5px;
+    margin: 5px;
+}
+.icons a{
+    text-decoration: none;
+    margin-right: 10px;
+}
