@@ -5,6 +5,7 @@
 body { 
     margin: 0;
     position: relative;
+    background-color: hsl(0, 0%, 12%);
 }
 .landingPage {
     background-color: hsl(0, 0%, 12%);
@@ -73,7 +74,7 @@ body {
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     display: inline-flex;
-    /*animation: pulse 5s infinite;*/
+    animation: pulse 5s infinite;
     z-index: 100;
 }
 .explore:hover {
@@ -115,7 +116,7 @@ body {
     height: 1px;
     width: 1px;
     top: 477px;
-    left: 713px;
+    left: 50vw;
     display: none;
     position: absolute;
     z-index: 100;
