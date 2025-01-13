@@ -2,8 +2,16 @@
     font-family: cooking;
     src: url(Manrope-Light.ttf);
 }
-body{
-    background-color: hsla(0, 0%, 0%, 0.884);
+body { 
+    margin: 0;
+    position: relative;
+}
+.landingPage {
+    background-color: hsl(0, 0%, 12%);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 .maintext {
     text-align: center;
@@ -12,7 +20,7 @@ body{
     margin-left: auto;
     transform: translateY(190px);
 }
-.header{
+.header {
     display: inline-block;
     color: hsl(0, 0%, 93%);
     font-family: cooking;
@@ -20,7 +28,7 @@ body{
     padding: 3px;
     margin: 2px;
 }   
-.headerDescription{
+.headerDescription {
     color: hsla(0, 2%, 60%, 0.918);
     font-family: cooking;
     font-size: 18px;
@@ -41,13 +49,13 @@ body{
     margin-right: 10px;
     transition: all 0.3s ease;
 }
-.githubIcon:hover i{
+.githubIcon:hover i {
     transform: scale(1.1, 1.1);
 }
-.discordIcon:hover i{
+.discordIcon:hover i {
     transform: scale(1.1, 1.1);
 }
-.youtubeIcon:hover i{
+.youtubeIcon:hover i {
     transform: scale(1.1, 1.1);
 }
 .explorediv {
@@ -65,7 +73,8 @@ body{
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     display: inline-flex;
-    animation: pulse 5s infinite;
+    /*animation: pulse 5s infinite;*/
+    z-index: 100;
 }
 .explore:hover {
     justify-content: center;
@@ -75,7 +84,7 @@ body{
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     display: inline-flex;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.25, 1.25);
     animation: none;
 }
 .fa-solid.fa-rocket.fa-2xl {   
@@ -90,7 +99,7 @@ body{
 .explore:hover > .fa-solid.fa-fire.fa-xl {
     display: inline;
 }
-@keyframes pulse{
+@keyframes pulse {
     0% {
         transform: scale(1, 1);
     }
@@ -100,4 +109,24 @@ body{
     100% {
         transform: scale(1, 1);
     }
-}   
+}
+.mainPage {
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 1px;
+    top: 477px;
+    left: 713px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    border-color: white;
+}
+@keyframes animationMain {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2000, 2000);
+    }
+}
